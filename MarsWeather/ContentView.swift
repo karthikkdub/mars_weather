@@ -12,10 +12,14 @@ struct ContentView: View {
    
     var body: some View {
         
-        VStack(alignment: .leading){
-            Text("Curiosity Rover").font(.system(size: 36, weight: .semibold))
-            Text("Gale Crater").font(.system(size: 25)).italic()
-        }.foregroundColor(.white)
+        VStack(alignment: .center){
+            locationView() .position(x: 200, y: 50)
+
+            Spacer()
+            Text("Sol 3527").font(.system(size: 36, weight: .bold)).foregroundColor(.white)
+        }
+        
+       
         
         .background(
             Image("marsImg")

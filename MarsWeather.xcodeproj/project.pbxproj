@@ -11,6 +11,11 @@
 		34DB782727373519003FBBC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DB782627373519003FBBC9 /* ContentView.swift */; };
 		34DB78292737351A003FBBC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34DB78282737351A003FBBC9 /* Assets.xcassets */; };
 		34DB782C2737351A003FBBC9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34DB782B2737351A003FBBC9 /* Preview Assets.xcassets */; };
+		34EC58052737693500A904C4 /* locationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC58042737693500A904C4 /* locationView.swift */; };
+		34EC58082737700600A904C4 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC58072737700600A904C4 /* Weather.swift */; };
+		34EC580A2737702A00A904C4 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC58092737702A00A904C4 /* Unit.swift */; };
+		34EC580C2737704F00A904C4 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC580B2737704F00A904C4 /* APIManager.swift */; };
+		34EC580E2737719200A904C4 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC580D2737719200A904C4 /* WeatherManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		34DB782627373519003FBBC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		34DB78282737351A003FBBC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34DB782B2737351A003FBBC9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		34EC58042737693500A904C4 /* locationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationView.swift; sourceTree = "<group>"; };
+		34EC58072737700600A904C4 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		34EC58092737702A00A904C4 /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
+		34EC580B2737704F00A904C4 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		34EC580D2737719200A904C4 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,8 @@
 		34DB782327373519003FBBC9 /* MarsWeather */ = {
 			isa = PBXGroup;
 			children = (
+				34EC580627376EA500A904C4 /* Utils */,
+				34EC58032737691900A904C4 /* Views */,
 				34DB782427373519003FBBC9 /* MarsWeatherApp.swift */,
 				34DB782627373519003FBBC9 /* ContentView.swift */,
 				34DB78282737351A003FBBC9 /* Assets.xcassets */,
@@ -65,6 +77,25 @@
 				34DB782B2737351A003FBBC9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		34EC58032737691900A904C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34EC58042737693500A904C4 /* locationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		34EC580627376EA500A904C4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				34EC58072737700600A904C4 /* Weather.swift */,
+				34EC58092737702A00A904C4 /* Unit.swift */,
+				34EC580B2737704F00A904C4 /* APIManager.swift */,
+				34EC580D2737719200A904C4 /* WeatherManager.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34EC580C2737704F00A904C4 /* APIManager.swift in Sources */,
+				34EC580A2737702A00A904C4 /* Unit.swift in Sources */,
+				34EC58082737700600A904C4 /* Weather.swift in Sources */,
+				34EC580E2737719200A904C4 /* WeatherManager.swift in Sources */,
 				34DB782727373519003FBBC9 /* ContentView.swift in Sources */,
+				34EC58052737693500A904C4 /* locationView.swift in Sources */,
 				34DB782527373519003FBBC9 /* MarsWeatherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
