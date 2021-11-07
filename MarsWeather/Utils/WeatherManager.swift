@@ -16,12 +16,16 @@ class WeatherManager: ObservableObject {
   
     
     func updateWeatherInfo() {
-      
-            apiManager.getWeather() { weather in
-                self.weather = weather
-            }
-        
+        apiManager.getWeather() { weather in
+            self.weather = weather
+        }
     }
     
+    
+    init() {
+        self.updateWeatherInfo()
+    }
+    
+    
+    
 }
-

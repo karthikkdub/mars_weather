@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State var unit: Unit = .F
+    @ObservedObject var weather = WeatherManager()
    
     var body: some View {
         
@@ -17,6 +19,9 @@ struct ContentView: View {
 
             Spacer()
             Text("Sol 3527").font(.system(size: 36, weight: .bold)).foregroundColor(.white)
+            
+            
+            MainData(data: weather.weather, units: .F)
         }
         
        

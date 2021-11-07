@@ -8,7 +8,7 @@
 import Foundation
 
 class APIManager {
-    private let apiAddress = "https://api.openweathermap.org/data/2.5/weather"
+    private let apiAddress = "https://mars.nasa.gov/rss/api/?feed=weather&category=msl&feedtype=json"
     
     public func getWeather(completion: @escaping (Weather) -> ()) {
         guard let url = URL(string:apiAddress) else {return}
@@ -21,6 +21,7 @@ class APIManager {
                 if let data = data {
                     do {
                         print("End API Fetch")
+                        print(data)
                         let weather = try JSONDecoder().decode(Weather.self, from: data)
                         print(weather)
                         
