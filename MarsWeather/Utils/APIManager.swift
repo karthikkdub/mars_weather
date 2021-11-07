@@ -4,14 +4,14 @@
 //
 //  Created by Haven Van Wormer on 11/6/21.
 //
-/*
+
 import Foundation
 
 class APIManager {
-    private let apiAddress = "https://mars.nasa.gov/rss/api/?feed=weather&category=msl&feedtype=json"
+    private let apiAddress = "https://api.openweathermap.org/data/2.5/weather"
     
     public func getWeather(completion: @escaping (Weather) -> ()) {
-        guard let url = URL(string: apiAddress) else {return}
+        guard let url = URL(string:apiAddress) else {return}
         
         print("Start API Fetch")
         URLSession.shared.dataTask(with: url){ data, response, error_ in
@@ -36,4 +36,3 @@ class APIManager {
         }.resume()
     }
 }
-*/
