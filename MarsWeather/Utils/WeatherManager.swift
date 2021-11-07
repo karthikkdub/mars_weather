@@ -10,7 +10,7 @@ import Foundation
 
 
 class WeatherManager: ObservableObject {
-    @Published private(set) var weather = Weather()
+    @Published var weather = Weather(from: JS)
     private let apiManager = APIManager()
     
   

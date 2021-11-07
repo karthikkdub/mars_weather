@@ -22,15 +22,21 @@ class APIManager {
                     do {
                         print("End API Fetch")
                         print(data)
-                        let weather = try JSONDecoder().decode(Weather.self, from: data)
+                        
+                        
+                      
+                        let weather = try? JSONDecoder().decode(Weather.self, from: data)
+                        
+                        
+                   
                         print(weather)
                         
                         DispatchQueue.main.async {
-                            completion(weather)
+                            completion(weather!)
                         }
                         
                     } catch {
-                        print("JSON Decoding Error: \(error.localizedDescription)")
+                        print("JSON Decoding Error: \(error)")
                     }
                 }
             }

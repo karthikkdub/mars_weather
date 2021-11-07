@@ -22,7 +22,9 @@ struct MainData: View {
     
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(WEATHERDATA.soles.first?.maxTemp ?? "w").foregroundColor(.white).onAppear(perform: {
+            print(WEATHERDATA.soles.first?.maxTemp)
+        })
     }
 }
 
