@@ -26,7 +26,7 @@ struct ContentView: View {
                 .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 900, height: 900, alignment: .center)
-               
+               //kkkk
                 
         )
     }
