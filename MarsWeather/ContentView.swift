@@ -23,6 +23,11 @@ struct ContentView: View {
         
         .background(
             Image("marsImg")
+                .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 900, height: 900, alignment: .center)
+               
+                
         )
     }
     
