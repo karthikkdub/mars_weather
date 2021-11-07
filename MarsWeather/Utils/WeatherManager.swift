@@ -4,7 +4,7 @@
 //
 //  Created by Haven Van Wormer on 11/6/21.
 //
-
+/*
 import Foundation
 
 class WeatherManager: NSObject, ObservableObject {
@@ -20,4 +20,4 @@ class WeatherManager: NSObject, ObservableObject {
     }
     
 }
-
+ */

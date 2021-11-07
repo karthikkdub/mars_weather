@@ -5,6 +5,9 @@
 //  Created by Haven Van Wormer on 11/6/21.
 //
 
+
+
+/*
 import Foundation
 
 // This file was generated from JSON Schema using quicktype, do not modify it directly.
@@ -73,3 +76,4 @@ enum Season {
     case month8
     case month9
 }
+ */
